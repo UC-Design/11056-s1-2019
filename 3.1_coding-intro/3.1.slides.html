@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Front-end Web Design</title>
+
+    <link rel="stylesheet" href="../lib/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../lib/reveal/css/theme/ben-default.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../lib/reveal/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? '../lib/reveal/css/print/pdf.css' : '../lib/reveal/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+
+    </script>
+</head>
+
+<body>
+    <div class="branding">         <h1>Front-end Web Design </h1>         <h2>Module 1</h2>     </div>     <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <textarea data-template>
+                    Front-end Web Design
+                    ======
+                    
+                    ## Coding introduction
+                    
+                    
+                </textarea>
+            </section>
+
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## This video
+                    
+                    Describe some key coding terms 
+
+                    Outline the default HTML structure and describe how it works
+
+
+                </textarea>
+            </section>
+
+            <!--            START-->
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key terms 
+                    
+                    - Elements
+                    - Tags
+                    - Attributes
+                    
+                    
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key terms: elements
+
+                    - Define the structure and content of objects within a page
+                    - We want to write semantic HTML 
+                    - Using the most appropriate element for the content 
+                    - E.g. headings, paragraphs, nav, footer, aside
+
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key terms: tags
+                    
+                    - An element name surrounded by the less-than and greater-than angled brackets
+                    - Most commonly occur in pairs
+                    - They open and close
+                    - Opens like: `<div>`
+                    - Closes like: `</div>`
+                    - What falls between is the content of a tag:
+                    ```<div>............</div>```
+
+                    
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key terms: attributes
+                    
+                    Attributes are used inside a tag and provide further information about that element
+                    
+                    Can only be in the opening tag:  
+                    ```<div class="...">....</div>```
+                    
+                    Must follow the same format:  
+                    <p class="fragment">attribute name</p>
+                    <p class="fragment">equals sign</p>
+                    <p class="fragment">quoted attribute value</p>
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key terms: attributes
+                                    
+                    For example:
+                    
+                    ```<a href=”http://google.com”>Google</a>```
+                    
+                    or
+                    
+                    ```<div id="col">....</div>```
+                    
+                    or 
+                    
+                    ```<header><h1 class="main">Site title</h1></header>```
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Lowercase
+                    
+                    - Keep your code in lowercase!
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Those terms again
+                    
+                    **Elements**  
+                    The named description of the content
+                    
+                    **Tags**  
+                    Element name wrapped in `<` and `>`
+                    
+                    **Attributes**  
+                    Provide additional information about an element
+
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    # HTML structure
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## HTML structure
+                    
+                    - All HTML documents have the same structure
+                    - It is very specific
+                    - If you put code in the wrong spot then you will have major issues when you validate the code later
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## HTML structure
+                    Here is the basic html5 document structure:
+                    
+                    ```
+                    <!DOCTYPE html>
+                    <html>
+                        <head>
+                            <title></title>
+                        </head>
+                        <body>
+                            
+                        </body>
+                    </html>
+                    ```
+
+                    Let's break it down!
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## HTML structure
+                    
+                    ```
+                    <!DOCTYPE html>
+                    ```
+
+                    The first line of every document must declare what version of HTML you are writing
+                    
+                    This is known as the doctype declaration 
+
+                    In HTML5 it is super short and easy to remember, previously it was much longer
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## HTML structure
+                    
+                    ```
+                    <html>
+
+                    
+                    </html>
+                    ```
+                    Following the doctype, the HTML element is declared
+
+                    It signifies the start of the document
+                    
+                    Don’t forget to close it though, it also signifies the end of the document
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## HTML structure
+                    
+                    ```
+                    <head>
+                        <title></title>
+                    </head>
+                    
+                    ```
+                    The content within the `<head>` does not actually appear on the page 
+                    
+                    This is where you set the title that appears in the browser
+                    
+                    Also where you will add the link to your CSS documents later
+                    
+                    Don’t forget to close the tag! 
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## HTML structure
+                    
+                    ```
+                    <body>
+                        <p>Content would go here</p>
+                    </body>
+                    ```
+                    All the visible content on the page must go between the `<body>` tags
+
+                    That means all text, images and layout tags 
+
+
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Super simple page
+                    
+                    A very simple page would look like this:
+
+                    
+                    ```
+                    <!DOCTYPE html>
+                    <html>
+                        <head>
+                            <title>My first web page</title>
+                        </head>
+                        <body>
+                            <h1>Hello World.</h1>
+                            <p>This is a basic web page.</p>
+                        </body>
+                    </html>
+                    ```
+                    
+                    [See page here](basic-html.html)
+                    
+                    Let's make it now so we can see how it all works...
+
+</textarea>
+            </section>
+
+
+
+
+
+            <!--            END-->
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## Questions
+                    
+                    Use the discussion forum or ask in class
+
+</textarea>
+            </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Next video
+                    
+                    Building a basic page
+</textarea>
+            </section>
+
+
+
+
+
+
+            <!--
+<section data-markdown>
+<textarea data-template>
+
+
+</textarea>
+</section>
+-->
+
+        </div>
+    </div>
+
+    <script src="../lib/reveal/lib/js/head.min.js"></script>
+    <script src="../lib/reveal/js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                src: '../lib/reveal/plugin/markdown/marked.js'
+            }, {
+                src: '../lib/reveal/plugin/markdown/markdown.js'
+            }, {
+                src: '../lib/reveal/plugin/notes/notes.js',
+                async: true
+            }, {
+                //for code highlighting
+                src: '../lib/reveal/plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+
+        // Shows the slide number using default formatting
+        Reveal.configure({
+            slideNumber: 'c/t'
+        });
+
+    </script>
+</body>
+
+</html>
