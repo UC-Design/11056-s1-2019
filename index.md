@@ -1,3 +1,11 @@
+---
+layout: default
+---
+
+Unit content for 11056, Front-end Web Design
+
+Please make sure you refer to Canvas for further information
+
 
 # Module 1: HTML and CSS
 
