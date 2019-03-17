@@ -1,4 +1,4 @@
-@import url(../../lib/reveal/lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../../../../../lib/reveal/lib/font/source-sans-pro/source-sans-pro.css);
 @import url(normalize.css);
 body {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
